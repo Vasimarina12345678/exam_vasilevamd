@@ -1,0 +1,19 @@
+//@mixin transform($prop:translateZ($shift:0))
+//{
+//transform: #{$prop($shift)};
+//}
+@mixin transition($prop:all,$time:.3s,$ease:ease-in-out,$delay:""){
+  transition: #{$prop} #{$time} #{$ease} #{$delay}
+}
+@mixin transform-origin($shiftX:"",$shiftY:""){
+transform-origin: #{$shiftX} #{$shiftY}
+}
+@mixin appearance($appearanceProp:none){
+  appearance: #{$appearanceProp};
+}
+//@mixin placeholder($placeholderProp:darken($color-3, 10%)){
+//  color: #{$placeholderProp};
+//}
+@mixin backface-visibility($backface-visibility:hidden){
+  backface-visibility:#{$backface-visibility};
+}
